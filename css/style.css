@@ -1,0 +1,100 @@
+@font-face{
+    font-family: websans;
+    src: url('./WorkSans.woff') format('woff');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: websans;
+    color: #fff;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+body{
+    background: url('../images/backgroung.jpg') no-repeat;
+    background-size: cover;
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.76);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-form{
+    display: flex;
+    align-items: center;
+    width: 18rem;
+    height: 24rem;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    background-image: linear-gradient(to top,#9c00c4, #648be6);
+    border-radius: 6px;
+    position: relative;
+}
+.logo{
+    width: 4rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+.logo img{
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 1rem;
+}
+.textinput-text{
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.356);
+    /* margin: 0.8rem; */
+    padding: .6rem 0; 
+    display: flex;
+    font-size: .8rem;
+    align-items: center;
+    font-size: .6rem;
+    margin: .6rem 0;
+    
+}
+input[type='text'],input[type='password']{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 80%; 
+    color: #fff;
+    padding-left: 10px;
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.808);
+    font-size: .8rem;
+}
+.textinput-check{
+    align-self: start;
+    margin: 10px 0 16px 0;
+    font-size: .7rem;
+}
+input[type='checkbox']{
+    vertical-align: middle;
+}
+input[type='submit']{
+    padding: .6rem 1.4rem;
+    border-radius: 28px;
+    border: none; 
+    outline: none;
+    cursor: pointer;
+}
+.forgot{
+    position: absolute;
+    font-size: .6rem;
+  bottom: 1.6rem;
+
+}
